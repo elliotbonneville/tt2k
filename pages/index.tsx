@@ -45,7 +45,7 @@ const Home = (): React.ReactElement => {
           .
         </Heading>
         <Box sx={{ paddingTop: 4 }} />
-        <Heading sx={{ textAlign: 'center' }}>Entries so far: 2</Heading>
+        <Heading sx={{ textAlign: 'center' }}>Entries so far: 3</Heading>
         <Box sx={{ paddingTop: 4 }} />
         <Text>
           Follow <a href="https://twitter.com/elliotbnvl">@elliotbnvl</a> for
