@@ -1,0 +1,96 @@
+import React from 'react';
+import { Global } from '@emotion/core';
+
+export const theme = {
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  fonts: {
+    body:
+      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading: 'inherit',
+    monospace: 'Menlo, monospace',
+  },
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  radii: [1, 2, 4, 8, 16, 32],
+  fontWeights: {
+    body: 400,
+    heading: 700,
+    bold: 700,
+  },
+  lineHeights: {
+    body: 1.5,
+    heading: 1.125,
+  },
+  colors: {
+    white: '#fff',
+    blue10: '#003E6B',
+    blue9: '#0A558C',
+    blue8: '#0F609B',
+    blue7: '#186FAF',
+    blue6: '#2680C2',
+    blue5: '#4098D7',
+    blue4: '#62B0E8',
+    blue3: '#84C5F4',
+    blue2: '#B6E0FE',
+    blue1: '#DCEEFB',
+    gray10: '#102A43',
+    gray9: '#243B53',
+    gray8: '#334E68',
+    gray7: '#486581',
+    gray6: '#627D98',
+    gray5: '#829AB1',
+    gray4: '#9FB3C8',
+    gray3: '#BCCCDC',
+    gray2: '#D9E2EC',
+    gray1: '#F0F4F8',
+    green11: '#37B63C',
+    green10: '#004440',
+    green9: '#016457',
+    green8: '#048271',
+    green7: '#079A82',
+    green6: '#17B897',
+    green5: '#2DCCA7',
+    green4: '#5FE3C0',
+    green3: '#8EEDD1',
+    green2: '#C6F7E9',
+    green1: '#F0FCF9',
+    red10: '#610404',
+    red9: '#780A0A',
+    red8: '#911111',
+    red7: '#A61B1B',
+    red6: '#BA2525',
+    red5: '#D64545',
+    red4: '#E66A6A',
+    red3: '#F29B9B',
+    red2: '#FACDCD',
+    red1: '#FFEEEE',
+    yellow10: '#513C06',
+    yellow9: '#7C5E10',
+    yellow8: '#A27C1A',
+    yellow7: '#C99A2E',
+    yellow6: '#E9B949',
+    yellow5: '#F7D070',
+    yellow4: '#F9DA8B',
+    yellow3: '#F8E3A3',
+    yellow2: '#FCEFC7',
+    yellow1: '#FFFAEB',
+  },
+  styles: {
+    root: {
+      fontFamily: 'body',
+      lineHeight: 'body',
+      fontWeight: 'body',
+      color: 'gray10',
+    },
+  },
+};
+
+export const Reset = (): React.ReactElement =>
+  React.createElement(Global, {
+    styles: {
+      body: {
+        margin: '0',
+        backgroundColor: 'white',
+        overscrollBehavior: 'none',
+      },
+    },
+  });
